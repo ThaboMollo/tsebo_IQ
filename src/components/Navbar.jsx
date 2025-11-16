@@ -38,22 +38,8 @@ export default function Navbar() {
             </span>
           </Link>
 
-          <div className="flex items-center space-x-6">
-            <Link
-              to="/about"
-              className="text-neutralDark dark:text-neutralMedium hover:text-accentTeal transition-smooth"
-            >
-              About
-            </Link>
-            <Link
-              to="/contact"
-              className="text-neutralDark dark:text-neutralMedium hover:text-accentTeal transition-smooth"
-            >
-              Contact
-            </Link>
-            
+          <div className="flex items-center space-x-6">           
             <ThemeToggle />
-
             {user ? (
               <>
                 <Link
